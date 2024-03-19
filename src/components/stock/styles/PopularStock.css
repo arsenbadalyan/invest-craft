@@ -1,0 +1,44 @@
+.popular-stock-card {
+    display: flex;
+    flex-grow: 1;
+    background-color: var(--color-main);
+    flex-direction: column;
+    gap: 12px;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition-duration: var(--transition-duration);
+    padding: 0.5rem;
+    position: relative;
+}
+.popular-stock-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    /* align-items: center; */
+}
+.popular-stock-name h5 {
+    opacity: .5;
+    font-weight: 400;
+}
+.popular-stock-card:hover {
+    background-color: var(--color-secondary);
+}
+.popular-stock-logo {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    position: relative;
+}
+.popular-stock-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@media (max-width: 769px) {
+    .popular-stock-card {
+        padding: 1rem 0.5rem;
+    }
+}
